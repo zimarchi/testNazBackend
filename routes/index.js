@@ -9,7 +9,11 @@ router.get('/', function(req, res, next) {
 
 router.get ('/year', function (req, res) {
   const date = new Date()
-  res.json  ({year: date.getFullYear()})
+  const year = date.getFullYear()
+  const goodYear = year.toString()
+  console.log ("toto")
+  
+  res.json  ({year: goodYear})
 
 })
 
